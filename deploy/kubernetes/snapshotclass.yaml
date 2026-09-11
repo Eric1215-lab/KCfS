@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) Arm Limited and Contributors
+# Copyright (c) Intel Corporation
+
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: csi-spdk-snapclass
+driver: csi.spdk.io
+parameters:
+  fsType: ext4
+  csi.storage.k8s.io/snapshotter-secret-name: spdkcsi-secret
+  csi.storage.k8s.io/snapshotter-secret-namespace: default
+deletionPolicy: Delete
