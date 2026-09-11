@@ -116,12 +116,3 @@ Kubernetes and SPDK environment.
 | `deploy/spdk/` | Local SPDK target container setup. |
 | `docs/` | Deployment and static-volume guides. |
 | `e2e/` | End-to-end test suite and sample manifests. |
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md). The upstream development guide
-is available at [spdk.io/development](https://spdk.io/development/).
-
-## License
-
-This project is licensed under the [Apache License 2.0](LICENSE).
